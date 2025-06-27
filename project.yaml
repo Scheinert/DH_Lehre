@@ -1,0 +1,55 @@
+title: >
+  <span style = "background-color: rgba(0,106,179,0.75); padding: 5px; color white">
+    Lehr- und Lernmaterialien der Universitätstbibliothek Kiel
+  </span>
+
+comment: >
+  <span style = "background-color: rgba(0,106,179,0.75); padding: 5px; color white">
+    ... made with Liascript ...
+  </span>
+
+logo: uni-kiel-bcu2020x.png
+
+footer: >
+  Für mehr Informationen zu den Angeboten des Referats der Digital Humanities und des des Forschungsdatenmanagements
+  <a href="https://www.ub.uni-kiel.de/de/digital-humanities/team" target="_blank">https://LiaScript.github.io</a>
+
+meta:
+  title: Liabooks
+  description: Collection of interactive Books
+
+collection:
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_transkribus/transkribusbaustein_v1/transkribus_baustein_v2.md
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_dh/course_dh.md
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_ai/course_ai.md
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/dummy_FDM1/course_dummy_fdm.md
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/dummy_FDM2/course_dummy2.md
+
+- html: >
+  <hr>
+  <h1>Digital Humanities</h1>
+  <p>Digital Humanities beschreibt.............Placeholder.......Placeholder</p>
+  </hr>
+
+
+- title: Digital Humanities
+  comment: ""
+  grid: true
+  collection:
+    - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_transkribus/transkribusbaustein_v1/transkribus_baustein_v2.md
+    - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_dh/course_dh.md
+    - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_ai/course_ai.md
+
+- html: >
+  <hr>
+  <h1>Digital Humanities</h1>
+  <p>Forschungsdatenmanagement beschreibt.............Placeholder.......Placeholder</p>
+  </hr>
+
+
+- title: Forschungsdatenmanagement (FDM)
+  comment: ""
+  grid: true
+  collection:
+    - url: https://github.com/Scheinert/DH_Lehre/blob/main/dummy_FDM1/course_dummy_fdm.md
+    - url: https://github.com/Scheinert/DH_Lehre/blob/main/dummy_FDM2/course_dummy2.md

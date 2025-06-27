@@ -1,0 +1,84 @@
+title: >
+  <span style = "background-color: rgba(0,106,179,0.75); padding: 5px; color: white">
+    Lehr- und Lernmaterialien der Universitätstbibliothek Kiel
+  </span>
+
+comment: >
+  <br>
+  <span style = "background-color: rgba(0,106,179,0.75); padding: 5px; color: white">
+    ... made with Liascript ...
+  </span>
+
+logo: uni-kiel-bcu2020x.png
+
+footer: >
+  Für mehr Informationen zu den Angeboten des Referats der Digital Humanities und des des Forschungsdatenmanagements
+  <a href="https://www.ub.uni-kiel.de/de/digital-humanities/team" target="_blank">https://LiaScript.github.io</a>
+  Für mehr Inforamtionen zu Liascript und Open Educational Resources (OER)
+  <a href="https://liascript.github.io/" target="_blank">https://LiaScript.github.io</a>   
+
+# With this settings you can customize social metadata, og-graph for facebook or twitter
+# if not present, the title, comment, and logo will be used.
+# You can explicitly turn this of with the cmd-parameter --project-no-meta
+meta:
+  title: OER-Collection
+  description: Sammlung der OER Inhalte der Arbeitsgruppe Softwareentwicklung und Robotik (TU Freiberg)
+  #image: url
+
+# A collection is where you put all your courses into, all information, such as title, comment, logo, etc.
+# will be taken from the links that you provide ...
+collection:
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_transkribus/transkribusbaustein_v1/transkribus_baustein_v2.md
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_dh/course_dh.md
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_ai/course_ai.md
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/dummy_FDM1/course_dummy_fdm.md
+  - url: https://github.com/Scheinert/DH_Lehre/blob/main/dummy_FDM2/course_dummy2.md
+
+  # Additionally it is possible to manually overwrite parameters
+  #- url: https://raw.githubusercontent.com/LiaPlayground/LiaScript_Tutorial_Kigali/main/README.md
+  #  title: eLearning Africa Workshop 2022
+  #  comment: Shows only an introduction, please follow the links within the course.
+    # logo: https://another_image.jpg
+    # or leave, so that no card-image is added to your preview-cards
+    # logo: 
+
+    # You can manually tag courses, if this has not been done within the main comment of the course.
+    # By default, these tags will be treated as categories, which can be used to navigate through
+    # your courses. To disable this, use the cmd-param --project-no-categories
+    # 
+    # For smaller overviews, you can also use the --project-category-blur parameter.
+    # this will not hide the courses, that do not match, but instead blur them.
+  #  tags:
+  #    - Tutorial
+  #    - LiaScript
+  #    - OER
+
+  - html: >
+      <hr>
+      <h1>Digital Humanities</h1>
+      <p>Digital Humanities beschreibt.............Placeholder.......Placeholder</p> 
+
+  # If you want to group multiple courses into one sub-collection, then instead of an "-url:"
+  # define another `collection`. All parameters can be changed as above. Additionally you can switch of images or comments,
+  # just by adding an empty attribute. And, it is also possible to add tags to every sub-course.
+  - title: Digital Humanities
+    comment: ""
+    grid: true
+    collection:
+      - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_transkribus/transkribusbaustein_v1/transkribus_baustein_v2.md
+      - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_dh/course_dh.md
+      - url: https://github.com/Scheinert/DH_Lehre/blob/main/baustein_ai/course_ai.md
+
+  # HTML content can be placed between cards
+  - html: >
+      <hr>
+      <h1>Digital Humanities</h1>
+      <p>Forschungsdatenmanagement beschreibt.............Placeholder.......Placeholder</p>
+
+  - title: Forschungsdatenmanagement (FDM)
+    comment: ""
+    grid: true # if you have larger collections and you want them to appear in a grid and not in a row, with some
+               # hidden content, then set the grid-parameter to true.
+    collection:
+      - url: https://github.com/Scheinert/DH_Lehre/blob/main/dummy_FDM1/course_dummy_fdm.md
+      - url: https://github.com/Scheinert/DH_Lehre/blob/main/dummy_FDM2/course_dummy2.md
